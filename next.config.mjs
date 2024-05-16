@@ -17,11 +17,11 @@ const nextConfig = {
     return [
       {
         // api/seoul/json/LOCALDATA_020301_${var}/1/50/01
-        source: '/api/seoul/',
+        source: '/api/map/',
         destination: `${process.env.NEXT_PUBLIC_ANIMAL_HOSPITAL}`,
       },
       {
-        source: '/api/seoul/',
+        source: '/api/map/',
         destination: `${process.env.NEXT_PUBLIC_ANIMAL_PHARAMCY}`,
       },
       {
