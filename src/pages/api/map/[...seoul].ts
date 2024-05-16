@@ -2,7 +2,6 @@ import { animalHospitalAPI, animalPharamcyAPI } from '@/components/map/api/seoul
 import type { NextApiRequest, NextApiResponse } from 'next';
 
 export default async function handler(req: NextApiRequest, res: NextApiResponse) {
-  console.log(req.url);
   const url = req.url!.replace('/api/map/json/', '');
   const { api_name, query_key, api_query } = req.body;
   const api_fn = {
